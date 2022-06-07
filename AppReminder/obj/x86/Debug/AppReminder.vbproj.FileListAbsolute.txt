@@ -1,0 +1,72 @@
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\obj\x86\Debug\AppReminder.FormMenuUtama.resources
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\obj\x86\Debug\AppReminder.Resources.resources
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\obj\x86\Debug\AppReminder.vbproj.GenerateResource.Cache
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\bin\Debug\AppReminder.exe
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\bin\Debug\AppReminder.pdb
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\bin\Debug\AppReminder.xml
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\obj\x86\Debug\AppReminder.exe
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\obj\x86\Debug\AppReminder.xml
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\obj\x86\Debug\AppReminder.pdb
+C:\Users\User Win 10\AppData\Local\Temporary Projects\AppReminder\obj\x86\Debug\AppReminder.FormLogin.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\AppReminder.vbproj.GenerateResource.Cache
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\AppReminder.vbprojResolveAssemblyReference.cache
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.exe.config
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.exe.manifest
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.application
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.exe
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.pdb
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.xml
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDatabase.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDebug.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDetail.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormEdit.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormInput.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormLogin.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormMenuUtama.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormPencarian.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormReminder.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormReportUser.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormSelesai.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormSplashscreen.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormUser.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormUserHapus.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormUserInput.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.Resources.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.exe.manifest
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.application
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.exe
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.xml
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.pdb
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormReportReminder.resources
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDihapus.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.exe.config
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.exe
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.xml
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.pdb
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.exe.manifest
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.application
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.exe
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.pdb
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Debug\REMINDER RSOS.xml
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\AppReminder.vbprojResolveAssemblyReference.cache
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDatabase.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDebug.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDetail.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormDihapus.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormEdit.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormInput.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormLogin.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormMenuUtama.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormPencarian.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormReminder.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormReportReminder.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormReportUser.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormSelesai.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormSplashscreen.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormUser.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormUserHapus.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.FormUserInput.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\Reminder.Resources.resources
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\AppReminder.vbproj.GenerateResource.Cache
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.exe.manifest
+D:\z KERJAAN\! kuliah\kp\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Debug\REMINDER RSOS.application

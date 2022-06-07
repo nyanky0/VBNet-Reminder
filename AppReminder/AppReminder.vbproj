@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61B96E74-5F28-4FE2-9617-7F46592641F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Reminder.My.MyApplication</StartupObject>
+    <RootNamespace>Reminder</RootNamespace>
+    <AssemblyName>REMINDER RSOS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\User Win 10\Documents\AA\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <TargetCulture>id</TargetCulture>
+    <ProductName>Program Reminder RSOS</ProductName>
+    <PublisherName>Yuda Hernawan</PublisherName>
+    <SuiteName>Yuda Hernawan</SuiteName>
+    <ApplicationRevision>27</ApplicationRevision>
+    <ApplicationVersion>1.0.4.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>REMINDER RSOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>REMINDER RSOS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>!icon4.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0BA9673F61C998F53992DD374D0B208FB78C1716</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AppReminder_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Program Files\MySQL\MySQL Connector NET\netstandard2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions" />
+    <Import Include="CrystalDecisions.CrystalReports" />
+    <Import Include="CrystalDecisions.CrystalReports.EMFServerMessageFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine.Migration" />
+    <Import Include="CrystalDecisions.CrystalReports.EPFPageObjectFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.ETFTotallerTreeFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.SCREventLog" />
+    <Import Include="CrystalDecisions.CrystalReports.TSLV" />
+    <Import Include="CrystalDecisions.CrystalReports.ViewerObjectModel" />
+    <Import Include="CrystalDecisions.ReportAppServer" />
+    <Import Include="CrystalDecisions.ReportSource" />
+    <Import Include="CrystalDecisions.Shared" />
+    <Import Include="CrystalDecisions.Shared.Interop" />
+    <Import Include="CrystalDecisions.Shared.Json" />
+    <Import Include="CrystalDecisions.Web" />
+    <Import Include="CrystalDecisions.Web.HtmlReportRender" />
+    <Import Include="CrystalDecisions.Windows" />
+    <Import Include="CrystalDecisions.Windows.Forms" />
+    <Import Include="CrystalDecisions.Windows.Forms.Internal" />
+    <Import Include="CrystalDecisions.Windows.Forms.Internal.Win32" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql" />
+    <Import Include="MySql.Data" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.Sql" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms.Design" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bin\Debug\crUser_bin.vb">
+      <DependentUpon>crUser_bin.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crReminder.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReminder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="crUser_ds.vb">
+      <DependentUpon>crUser_ds.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="crUser.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crUser.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ds\DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatabase.Designer.vb">
+      <DependentUpon>FormDatabase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDatabase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDebug.Designer.vb">
+      <DependentUpon>FormDebug.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDebug.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetail.Designer.vb">
+      <DependentUpon>FormDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDihapus.Designer.vb">
+      <DependentUpon>FormDihapus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDihapus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEdit.Designer.vb">
+      <DependentUpon>FormEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInput.Designer.vb">
+      <DependentUpon>FormInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuUtama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenuUtama.Designer.vb">
+      <DependentUpon>FormMenuUtama.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.vb">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPencarian.Designer.vb">
+      <DependentUpon>FormPencarian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPencarian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReminder.Designer.vb">
+      <DependentUpon>FormReminder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReminder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportReminder.Designer.vb">
+      <DependentUpon>FormReportReminder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportReminder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportUser.Designer.vb">
+      <DependentUpon>FormReportUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelesai.Designer.vb">
+      <DependentUpon>FormSelesai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelesai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSplashscreen.Designer.vb">
+      <DependentUpon>FormSplashscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSplashscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.vb">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserHapus.Designer.vb">
+      <DependentUpon>FormUserHapus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserHapus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUserInput.Designer.vb">
+      <DependentUpon>FormUserInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bin\Debug\crUser_bin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUser_bin.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crReminder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReminder.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crUser_ds.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUser_ds.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crUser.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crUser.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDatabase.resx">
+      <DependentUpon>FormDatabase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDebug.resx">
+      <DependentUpon>FormDebug.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetail.resx">
+      <DependentUpon>FormDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDihapus.resx">
+      <DependentUpon>FormDihapus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEdit.resx">
+      <DependentUpon>FormEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInput.resx">
+      <DependentUpon>FormInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenuUtama.resx">
+      <DependentUpon>FormMenuUtama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPencarian.resx">
+      <DependentUpon>FormPencarian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReminder.resx">
+      <DependentUpon>FormReminder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportReminder.resx">
+      <DependentUpon>FormReportReminder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportUser.resx">
+      <DependentUpon>FormReportUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelesai.resx">
+      <DependentUpon>FormSelesai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSplashscreen.resx">
+      <DependentUpon>FormSplashscreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserHapus.resx">
+      <DependentUpon>FormUserHapus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserInput.resx">
+      <DependentUpon>FormUserInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="AppReminder_TemporaryKey.pfx" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="ds\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ds\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ds\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="!icon2.ico" />
+    <Content Include="!icon4.ico" />
+    <Content Include="FormInputtextbackup.txt" />
+    <Content Include="FormMenuUtamatextbackup.txt" />
+    <Content Include="formedit.txt" />
+    <Content Include="img_20211204_wa0022_0Xi_1.ico" />
+    <None Include="Resources\!icon4.png" />
+    <None Include="Resources\RMDME.png" />
+    <None Include="Resources\!icon2.png" />
+    <None Include="Resources\formuser.png" />
+    <None Include="Resources\forminputuser.png" />
+    <None Include="Resources\formhaoususer.png" />
+    <None Include="Resources\btnusertambah.png" />
+    <None Include="Resources\btnuserpassword.png" />
+    <None Include="Resources\btnuserdelete1.png" />
+    <None Include="Resources\KOP_SURAT_4g.png" />
+    <None Include="Resources\IMG-20211204-WA0023.jpg" />
+    <None Include="Resources\logosearch.png" />
+    <None Include="Resources\logoplus.png" />
+    <None Include="Resources\logoedit.png" />
+    <None Include="Resources\formmenuutama1.png" />
+    <None Include="Resources\notif3.wav" />
+    <None Include="Resources\notif2.wav" />
+    <None Include="Resources\notif1.wav" />
+    <None Include="Resources\GEDUNG RSOS 3D 2.jpeg" />
+    <None Include="Resources\GEDUNG RSOS 3D 1.jpeg" />
+    <None Include="Resources\notif.wav" />
+    <None Include="Resources\KOP_SURAT_4.png" />
+    <None Include="Resources\btnrefresh.png" />
+    <None Include="Resources\formdetail.png" />
+    <None Include="Resources\KOP_SURAT_2.png" />
+    <None Include="Resources\btnuseredit.png" />
+    <None Include="Resources\btnuserdelete2.png" />
+    <None Include="Resources\formpencarian.png" />
+    <None Include="Resources\btnSILANG.png" />
+    <None Include="Resources\btnCHECK.png" />
+    <None Include="Resources\formselesai.png" />
+    <None Include="Resources\formreminder.png" />
+    <None Include="Resources\formedit.png" />
+    <None Include="Resources\btntutup.png" />
+    <None Include="Resources\logosampah.png" />
+    <None Include="Resources\logopassword.png" />
+    <None Include="Resources\BTNSIMPAN.png" />
+    <None Include="Resources\BTNSELESAIKAN.png" />
+    <None Include="Resources\BTNOK.png" />
+    <None Include="Resources\BTNlogin.png" />
+    <None Include="Resources\BTNLAPORAN.png" />
+    <None Include="Resources\BTNCEKKONEKSI.png" />
+    <None Include="Resources\BTNCARI.png" />
+    <None Include="Resources\BTNBATAL.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\formmenuutama.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\formlogin.png" />
+    <None Include="Resources\logosearch1.png" />
+    <None Include="Resources\logominus.png" />
+    <None Include="Resources\IMG-20211204-WA0022.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

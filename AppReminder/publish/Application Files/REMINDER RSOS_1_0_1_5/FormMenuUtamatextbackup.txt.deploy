@@ -1,0 +1,23 @@
+﻿Sub tampilReminder()
+
+        Call Koneksi()
+        Da = New OdbcDataAdapter("select * reminder_untuk, reminder_kode, reminder_tentang, reminder_detail, from tbl_reminder", Conn)
+        Ds = New DataSet
+        Da.Fill(Ds, "tbl_reminder")
+        dgvFmu.DataSource = Ds.Tables("tbl_reminder")
+
+    End Sub
+
+    Sub aturDGV()
+        Try
+            dgvFmu.Columns(0).Width = 70
+            dgvFmu.Columns(1).Width = 130
+            dgvFmu.Columns(2).Width = 100
+            dgvFmu.Columns(3).Width = 150
+            dgvFmu.Columns(0).HeaderText = "Divisi"
+            dgvFmu.Columns(1).HeaderText = "Kode"
+            dgvFmu.Columns(2).HeaderText = "Tentang"
+            dgvFmu.Columns(3).HeaderText = "Detail"
+        Catch ex As Exception
+        End Try
+    End Sub

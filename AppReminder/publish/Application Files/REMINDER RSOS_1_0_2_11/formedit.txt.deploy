@@ -1,0 +1,156 @@
+﻿Public Sub clearisiedit()
+        txtFedetail.Text = ""
+        txtFetentang.Text = ""
+    End Sub
+    'load isi berdasar cbfeuser
+    Sub loadfeawal()
+        Koneksi()
+        If cbFeuser.Text = "SEMUA" Then
+            Try
+                CMd = New OdbcCommand("select * from tbl_reminder where reminder_kode='" & cbFekode.Text & "'", Conn)
+                Rd = CMd.ExecuteReader
+                While Rd.Read
+                    txtFetentang.Text = Rd.Item("reminder_tentang")
+                    txtFedetail.Text = Rd.Item("reminder_detail")
+                    txtFetanggal.Text = Rd.Item("reminder_tanggal_acara")
+                    txtFetanggalreminder.Text = Rd.Item("reminder_tanggal")
+                End While
+            Catch ex As Exception
+            End Try
+        Else
+            Try
+                CMd = New OdbcCommand("select * from tbl_reminder" & cbFeuser.Text & " where reminder_kode='" & cbFekode.Text & "'", Conn)
+                Rd = CMd.ExecuteReader
+                While Rd.Read
+                    txtFetentang.Text = Rd.Item("reminder_tentang")
+                    txtFedetail.Text = Rd.Item("reminder_detail")
+                    txtFetanggal.Text = Rd.Item("reminder_tanggal_acara")
+                    txtFetanggalreminder.Text = Rd.Item("reminder_tanggal")
+                End While
+            Catch ex As Exception
+            End Try
+        End If
+    End Sub
+    'load isi kode di tabel semua reminder
+    Sub loadeditdaribtn()
+        cbFeuser.Visible = False
+        lblFeuser.Visible = False
+        Try
+            Koneksi()
+            CMd = New OdbcCommand("select * from tbl_reminder" & cbFeuser.Text & " where reminder_kode='" & cbFekode.Text & "'", Conn)
+            Rd = CMd.ExecuteReader
+            While Rd.Read
+                txtFetentang.Text = Rd.Item("reminder_tentang")
+                txtFedetail.Text = Rd.Item("reminder_detail")
+                txtFetanggal.Text = Rd.Item("reminder_tanggal_acara")
+                txtFetanggalreminder.Text = Rd.Item("reminder_tanggal")
+            End While
+        Catch ex As Exception
+        End Try
+    End Sub
+    Sub loadkodeadmin()
+        cbFekode.Items.Clear()
+        Koneksi()
+        Try
+            CMd = New OdbcCommand("select reminder_kode from tbl_reminder order by reminder_kode", Conn)
+            Rd = CMd.ExecuteReader
+            While Rd.Read
+                cbFekode.Text = Rd.Item("reminder_kode")
+                cbFekode.Items.Add(Rd.Item("reminder_kode"))
+            End While
+        Catch ex As Exception
+        End Try
+    End Sub
+    'load isi kode berdasar nama user di menu utama
+    Sub loadkodeuser()
+        cbFekode.Items.Clear()
+        cbFeuser.Visible = False
+        lblFeuser.Visible = False
+        If cbFekode.Text = "" Then
+            Koneksi()
+            Try
+                CMd = New OdbcCommand("select * from tbl_reminder" & cbFeuser.Text & " where reminder_status='BELUM TERLAKSANA'", Conn)
+                Rd = CMd.ExecuteReader
+                While Rd.Read
+                    cbFekode.Text = Rd.Item("reminder_kode")
+                    cbFekode.Items.Add(Rd.Item("reminder_kode"))
+                End While
+            Catch ex As Exception
+
+            End Try
+        Else
+            cbFeuser.Visible = True
+            lblFeuser.Visible = True
+        End If
+    End Sub
+    'load isi user order by username, hapus admin
+    Sub loadcbadmin()
+        cbFeuser.Items.Clear()
+        Koneksi()
+        Try
+            CMd = New OdbcCommand("select user_name from tbl_user order by user_name", Conn)
+            Rd = CMd.ExecuteReader
+            While Rd.Read
+                cbFeuser.Items.Add(Rd.Item("user_name"))
+                cbFeuser.Items.Remove("ADMINISTRATOR")
+            End While
+        Catch ex As Exception
+        End Try
+    End Sub
+    Private Sub FormEdit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If FormDebug.txtdgvuserhidden.Text = "" Then
+            If FormDebug.txtFistatus.Text = "admin" Then
+                cbFeuser.Visible = True
+                lblFeuser.Visible = True
+                Call loadcbadmin()
+                Call loadkodeadmin()
+                cbFeuser.Text = "PILIH USER"
+                Call loadfeawal()
+                MsgBox("load inputadmin")
+            Else
+                Call loadkodeuser()
+                Call loadfeawal()
+                MsgBox("load inputuser")
+            End If
+        Else
+            Call loadeditdaribtn()
+            MsgBox("load inputbtn")
+
+        End If
+
+    End Sub
+    Private Sub cbFeuser_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFeuser.SelectedIndexChanged
+        cbFekode.Items.Clear()
+        cbFekode.Visible = True
+        Koneksi()
+        Try
+            CMd = New OdbcCommand("select reminder_kode from tbl_reminder" & cbFeuser.Text & " where reminder_status='BELUM TERLAKSANA'", Conn)
+            Rd = CMd.ExecuteReader
+            While Rd.Read
+                cbFekode.Text = Rd.Item("reminder_kode")
+                cbFekode.Items.Add(Rd("reminder_kode"))
+            End While
+        Catch ex As Exception
+        End Try
+        Call loadfeawal()
+
+    End Sub
+    Private Sub cbFekode_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        If cbFeuser.Text = "" Then
+            cbFekode.Visible = False
+        End If
+    End Sub
+    Private Sub cbFekode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cbFekode.SelectedIndexChanged
+        Call loadfeawal()
+    End Sub
+
+    Private Sub btnFebatal_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFebatal.Click
+        Me.Close()
+        FormDebug.txtdgvuserhidden.Text = ""
+        FormDebug.txtdgvkodehidden.Text = ""
+        FormMenuUtama.CheckButtonStatus2()
+        'txtFetanggal.Text = FormDebug.txtTanggalangka.Text
+        'txtFetanggalreminder.Text = FormDebug.txtTanggalangka.Text
+        txtFetanggal.Value = Format(Now)
+        txtFetanggalreminder.Value = Format(Now)
+    End Sub

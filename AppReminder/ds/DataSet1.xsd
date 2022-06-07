@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_reminder" msprop:Generator_TableClassName="tbl_reminderDataTable" msprop:Generator_TableVarName="tabletbl_reminder" msprop:Generator_RowChangedName="tbl_reminderRowChanged" msprop:Generator_TablePropName="tbl_reminder" msprop:Generator_RowDeletingName="tbl_reminderRowDeleting" msprop:Generator_RowChangingName="tbl_reminderRowChanging" msprop:Generator_RowEvHandlerName="tbl_reminderRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_reminderRowDeleted" msprop:Generator_RowClassName="tbl_reminderRow" msprop:Generator_UserTableName="tbl_reminder" msprop:Generator_RowEvArgName="tbl_reminderRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reminder_pembuat" msprop:Generator_ColumnVarNameInTable="columnreminder_pembuat" msprop:Generator_ColumnPropNameInRow="reminder_pembuat" msprop:Generator_ColumnPropNameInTable="reminder_pembuatColumn" msprop:Generator_UserColumnName="reminder_pembuat" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_untuk" msprop:Generator_ColumnVarNameInTable="columnreminder_untuk" msprop:Generator_ColumnPropNameInRow="reminder_untuk" msprop:Generator_ColumnPropNameInTable="reminder_untukColumn" msprop:Generator_UserColumnName="reminder_untuk" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_kode" msprop:Generator_ColumnVarNameInTable="columnreminder_kode" msprop:Generator_ColumnPropNameInRow="reminder_kode" msprop:Generator_ColumnPropNameInTable="reminder_kodeColumn" msprop:Generator_UserColumnName="reminder_kode" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_tentang" msprop:Generator_ColumnVarNameInTable="columnreminder_tentang" msprop:Generator_ColumnPropNameInRow="reminder_tentang" msprop:Generator_ColumnPropNameInTable="reminder_tentangColumn" msprop:Generator_UserColumnName="reminder_tentang" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_detail" msprop:Generator_ColumnVarNameInTable="columnreminder_detail" msprop:Generator_ColumnPropNameInRow="reminder_detail" msprop:Generator_ColumnPropNameInTable="reminder_detailColumn" msprop:Generator_UserColumnName="reminder_detail" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_tanggal" msprop:Generator_ColumnVarNameInTable="columnreminder_tanggal" msprop:Generator_ColumnPropNameInRow="reminder_tanggal" msprop:Generator_ColumnPropNameInTable="reminder_tanggalColumn" msprop:Generator_UserColumnName="reminder_tanggal" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="reminder_tanggal_acara" msprop:Generator_ColumnVarNameInTable="columnreminder_tanggal_acara" msprop:Generator_ColumnPropNameInRow="reminder_tanggal_acara" msprop:Generator_ColumnPropNameInTable="reminder_tanggal_acaraColumn" msprop:Generator_UserColumnName="reminder_tanggal_acara" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="reminder_tanggal_dibuat" msprop:Generator_ColumnVarNameInTable="columnreminder_tanggal_dibuat" msprop:Generator_ColumnPropNameInRow="reminder_tanggal_dibuat" msprop:Generator_ColumnPropNameInTable="reminder_tanggal_dibuatColumn" msprop:Generator_UserColumnName="reminder_tanggal_dibuat" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_status" msprop:Generator_ColumnVarNameInTable="columnreminder_status" msprop:Generator_ColumnPropNameInRow="reminder_status" msprop:Generator_ColumnPropNameInTable="reminder_statusColumn" msprop:Generator_UserColumnName="reminder_status" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_tanggal_statusselesai" msprop:Generator_ColumnVarNameInTable="columnreminder_tanggal_statusselesai" msprop:Generator_ColumnPropNameInRow="reminder_tanggal_statusselesai" msprop:Generator_ColumnPropNameInTable="reminder_tanggal_statusselesaiColumn" msprop:Generator_UserColumnName="reminder_tanggal_statusselesai" type="xs:string" minOccurs="0" />
+              <xs:element name="reminder_selesai_note" msprop:Generator_ColumnVarNameInTable="columnreminder_selesai_note" msprop:Generator_ColumnPropNameInRow="reminder_selesai_note" msprop:Generator_ColumnPropNameInTable="reminder_selesai_noteColumn" msprop:Generator_UserColumnName="reminder_selesai_note" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,115 @@
+﻿Forminput
+Private Sub btnFikode_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFikode.Click
+        If cbFikode.Text = "FARMASI" Then
+            Call autonumber()
+        ElseIf cbFikode.Text = "IT" Then
+            Call autonumberit()
+        ElseIf cbFikode.Text = "LOGISTIK" Then
+            Call autonumberlogistik()
+        ElseIf cbFikode.Text = "DIREKSI" Then
+            Call autonumber()
+
+        End If
+
+
+Private Sub autonumberfarmasi()
+        Koneksi()
+        Try
+            CMd = New OdbcCommand("SELECT CONCAT( 'RMD.FM.' ,LPAD(( RIGHT( MAX(reminder_kode),4)+1),3,'0')) as reminder_kode FROM tbl_reminderfarmasi", Conn)
+            Rd = CMd.ExecuteReader
+            If Rd.Read Then
+                txtFikode.Text = Rd.Item("reminder_kode")
+            Else
+                txtFikode.Text = "RMD.FM.0001"
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Exclamation)
+        End Try
+    End Sub
+    Private Sub autonumberdireksi()
+        Koneksi()
+        Try
+            CMd = New OdbcCommand("SELECT CONCAT( 'RMD.DIR.' ,LPAD(( RIGHT( MAX(reminder_kode),4)+1),3,'0')) as reminder_kode FROM tbl_reminderdireksi", Conn)
+            Rd = CMd.ExecuteReader
+            If Rd.Read Then
+                txtFikode.Text = Rd.Item("reminder_kode")
+            Else
+                txtFikode.Text = "RMD.DIR.0001"
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Exclamation)
+        End Try
+    End Sub
+    Private Sub autonumberit()
+        Koneksi()
+        Try
+            CMd = New OdbcCommand("SELECT CONCAT( 'RMD.IT.' ,LPAD(( RIGHT( MAX(reminder_kode),4)+1),3,'0')) as reminder_kode FROM tbl_reminderit", Conn)
+            Rd = CMd.ExecuteReader
+            If Rd.Read Then
+                txtFikode.Text = Rd.Item("reminder_kode")
+            Else
+                txtFikode.Text = "RMD.IT.0001"
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Exclamation)
+        End Try
+    End Sub
+    Private Sub autonumberlogistik()
+        Koneksi()
+        Try
+            CMd = New OdbcCommand("SELECT CONCAT( 'RMD.LGS.' ,LPAD(( RIGHT( MAX(reminder_kode),4)+1),3,'0')) as reminder_kode FROM tbl_reminderlogistik", Conn)
+            Rd = CMd.ExecuteReader
+            If Rd.Read Then
+                txtFikode.Text = Rd.Item("reminder_kode")
+            Else
+                txtFikode.Text = "RMD.LGS.0001"
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message, MsgBoxStyle.Exclamation)
+        End Try
+    End Sub
+
+
+
+
+    Private Sub InputFarmasi()
+        ' Jika semua form terisi, maka kita panggil Koneksi() ke database
+        Call Koneksi()
+        ' lalu kita masukan data kita ke table mahasiswa (insert into mahasiswa .....)
+        ' inputan berisi pembuat, kode, tentang, detail, tanggal acara, tanggal dibuat, status
+        Dim InputData As String = "Insert into tbl_reminderfarmasi values('" & txtFipembuat.Text & "','" & cbFikode.Text & "','" & txtFikode.Text & "','" & txtFitentang.Text & "','" & txtFidetail.Text & "','" & txtFitanggal.Text & "','" & txtFitanggalsekarang & "','BELUM SELESAI')"
+        CMd = New OdbcCommand(InputData, Conn)
+        CMd.ExecuteNonQuery()
+        ' lalu kita tampilkan message "input data berhasil"
+        MsgBox("Input data FARMASI berhasil")
+        ' buat form reminder baru disimpan terus close
+        cleardata()
+        Me.Close()
+    End Sub
+    Private Sub InputIT()
+        Call Koneksi()
+        Dim InputData As String = "Insert into tbl_reminderit values('" & txtFipembuat.Text & "','" & cbFikode.Text & "','" & txtFikode.Text & "','" & txtFitentang.Text & "','" & txtFidetail.Text & "','" & txtFitanggal.Text & "','" & txtFitanggalsekarang & "','BELUM SELESAI')"
+        CMd = New OdbcCommand(InputData, Conn)
+        CMd.ExecuteNonQuery()
+        MsgBox("Input data IT berhasil")
+        cleardata()
+        Me.Close()
+    End Sub
+    Private Sub InputLogistik()
+        Call Koneksi()
+        Dim InputData As String = "Insert into tbl_reminderlogistik values('" & txtFipembuat.Text & "','" & cbFikode.Text & "','" & txtFikode.Text & "','" & txtFitentang.Text & "','" & txtFidetail.Text & "','" & txtFitanggal.Text & "','" & txtFitanggalsekarang & "','BELUM SELESAI')"
+        CMd = New OdbcCommand(InputData, Conn)
+        CMd.ExecuteNonQuery()
+        MsgBox("Input data LOGISTIK berhasil")
+        cleardata()
+        Me.Close()
+    End Sub
+    Private Sub InputDireksi()
+        Call Koneksi()
+        Dim InputData As String = "Insert into tbl_reminderdireksi values('" & txtFipembuat.Text & "','" & cbFikode.Text & "','" & txtFikode.Text & "','" & txtFitentang.Text & "','" & txtFidetail.Text & "','" & txtFitanggal.Text & "','" & txtFitanggalsekarang & "','BELUM SELESAI')"
+        CMd = New OdbcCommand(InputData, Conn)
+        CMd.ExecuteNonQuery()
+        MsgBox("Input data DIREKSI berhasil")
+        cleardata()
+        Me.Close()
+    End Sub

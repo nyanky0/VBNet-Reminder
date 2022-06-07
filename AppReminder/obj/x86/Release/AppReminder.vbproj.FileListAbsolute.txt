@@ -1,0 +1,3 @@
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\bin\Release\REMINDER RSOS.exe.config
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Release\Interop.CRDESIGNERLib.dll
+F:\hwangkyo ganteng\AppReminder\AppReminder\AppReminder\obj\x86\Release\AppReminder.vbproj.ResolveComReference.cache
